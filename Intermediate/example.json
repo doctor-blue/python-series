@@ -1,0 +1,20 @@
+{
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "hobbies": [
+        "play game",
+        "Home workout",
+        "swimming"
+    ],
+    "age": 20,
+    "friend": [
+        {
+            "name": "John",
+            "age": 18
+        },
+        {
+            "name": "Sara",
+            "age": 21
+        }
+    ]
+}

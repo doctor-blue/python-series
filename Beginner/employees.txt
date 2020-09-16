@@ -1,0 +1,6 @@
+Jim - Salesman
+Dwight - Salesman
+Pam - Developer
+Michael - Manager
+Oscar - Accountant
+Hello World - Coder
