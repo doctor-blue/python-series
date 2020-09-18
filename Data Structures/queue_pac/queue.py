@@ -5,6 +5,7 @@ class Queue:
     def count(self):
         return len(self.storage)
 
+    @property
     def is_empty(self):
         return self.count() == 0
 
@@ -12,7 +13,7 @@ class Queue:
         self.storage.insert(self.count(), element)
 
     def dequeue(self):
-        if self.is_empty():
+        if self.is_empty:
             return None
         else:
             return self.storage.pop()

@@ -7,6 +7,7 @@ class LinkedList:
         self.tail = None
         self.size = 0
 
+    @property
     def is_empty(self):
         return self.size == 0
 
@@ -20,7 +21,7 @@ class LinkedList:
         return self
 
     def add_to_end(self, value):
-        if self.is_empty():
+        if self.is_empty:
             self.add_to_first(value)
             return self
         if self.tail.next_node is None:
@@ -53,11 +54,11 @@ class LinkedList:
 
     def pop(self):
         if isinstance(self.head, Node):
-            if self.is_empty() is False:
+            if self.is_empty is False:
                 self.size -= 1
             result = self.head.value
             self.head = self.head.next_node
-            if self.is_empty():
+            if self.is_empty:
                 self.tail = None
             return result
         return None
@@ -89,7 +90,7 @@ class LinkedList:
 
     def to_string(self):
         if isinstance(self.head, Node):
-            if self.is_empty():
+            if self.is_empty:
                 return "Empty list"
             else:
                 return self.head.to_string()
