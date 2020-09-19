@@ -1,4 +1,4 @@
-from tree.tree_node import TreeNode
+from tree_pac.tree_node import TreeNode
 
 food = TreeNode("Food")
 
