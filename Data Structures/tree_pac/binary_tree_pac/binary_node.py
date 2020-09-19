@@ -4,6 +4,13 @@ class BinaryNode:
         self.right_child = None
         self.value = value
 
+    # For binary search tree
+    def min(self):
+        if self.left_child is None:
+            return self
+        else:
+            return self.left_child.min()
+
     def to_string(self):
         return self.diagram(self)
 
@@ -37,8 +44,3 @@ class BinaryNode:
             self.left_child.travel_post_order(visit)
         if self.right_child is not None:
             self.right_child.travel_post_order(visit)
-
-
-
-
-
