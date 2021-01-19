@@ -1,38 +1,34 @@
-""" myList=["banana","cherry","apple"]
-print(myList)
+friends = ["Sam", "John", "Anna", "Tan"]
+print(friends)
+# friends.pop(1)
+# del friends[2]
+# friends.clear()
 
-item=myList.pop()
-print(item)
-myList.insert(0,"lime")
-## myList.clear()
+# for i in range(len(friends)):
+#     print(friends[i])
 
-myList.reverse()
+# [print(x) for x in friends]
+# friends.sort()
+# print(friends)
+# numbers = [50, 9, 0, 15, 80]
+# numbers.sort(reverse = True)
+# print(numbers)
 
-new_list=sorted(myList)
+# friends.reverse()
+# print(friends)
 
-print(myList)
-print(new_list) """
+# friends2 = friends.copy()
+# friends2 = list(friends)
 
-""" myList=[0,1,2,3,4,5,6,7,8,9]
+# friends2.append(25)
+# print('friends2', friends2)
+# print('friends1', friends)
 
-a=myList[1:5]
-b=myList[::3]
-print(b) 
-"""
+numbers = list((1, 5, 9, -2))
+print(numbers)
 
-""" myList1 = ["banana", "Lemon", "Watermelon"]
+# list3 = friends+numbers
+# print("List 3 = ", list3)
 
-myList2 = myList1[:]
-
-myList1.append("Orange")
-
-print(myList1)
-print(myList2) """
-
-
-myList = [1, 2, 3, 4, 5, 6]
-
-a = [x + x for x in myList]
-
-print(myList)
-print(a)
+friends.extend(numbers)
+print('friends = ',friends)
